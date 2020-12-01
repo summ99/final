@@ -4,10 +4,15 @@ body,html{
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
 }
+.next{
+  width:15vw;
+}
 .container{
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60vw;
   height:250vh;
   background-color: #f3e2e8;
 }
@@ -19,7 +24,7 @@ body,html{
   grid-template-columns: 1fr 2fr;
 }
 .menuBox > div{
-  width:60vw;
+  width:55vw;
   height:40vh;
   border: 5px solid #394e6b;
   border-top: none;
@@ -41,18 +46,61 @@ body,html{
   color: #df8285;
   border-top: 5px solid #394e6b;
 }
-.div2, .div3, .div4, .div5{
+.div2, .div4{
   display:flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
-iframe{
+.div3, .div5{
+  display:flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.thumbnailR{
   display: flex;
+  flex-basis: 35%;
+  justify-content: center;
   align-items: center;
-  width:30vw;
-  height:34vh;
+  width:20vw;
+  height:30vh;
+  opacity:0.8;
 }
-p{
-  width:40%;
+.thumbnailL{
+  flex-basis: 35%;
+  justify-content: flex-start;
+  width:20vw;
+  height:30vh;
+  opacity:0.8;
+}
+
+.playL{
+  width:6vw;
+  position: relative;
+  margin-top:-8rem;
+  margin-left:5rem;
+  cursor:pointer;
+  transition: 0.5s;
+}
+.playR{
+  width:6vw;
+  height:12vh;
+  position: relative;
+  margin-bottom:-8rem;
+  margin-right:-5rem;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.descripR{
+  flex-basis: 60%;
+  justify-content: space-between;
+  /*position:relative;
+  margin-left: 25vw;
+  width: 40vw;*/
+}
+.descripL{
+  position:relative;
+  margin-right: 25vw;
+  width: 40vw;
 }
