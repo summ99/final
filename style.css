@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato&display=swap');
 body,html{
   margin: 5vw 5vw 5vw 5vw;
-  background-color: #d5ceca;
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
 }
 .container{
   display:flex;
   justify-content: center;
   align-items: center;
   height:250vh;
-  background-color: #e9d4c5;
+  background-color: #f3e2e8;
 }
 .menubox{
   margin:5vw;
@@ -21,14 +21,15 @@ body,html{
 .menuBox > div{
   width:60vw;
   height:40vh;
-  border: 4px solid #508882;
+  border: 5px solid #394e6b;
   border-top: none;
 }
 .logo{
-  background-image: url('logo.jpg');
-  background-size: contain;
-  border-top: 4px solid #508882;
-  border-right: 4px solid #508882;
+  background-image: url('logo1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 5px solid #394e6b;
+  border-right: 5px solid #394e6b;
 }
 .title{
   display: flex;
@@ -37,6 +38,21 @@ body,html{
   align-items: center;
   font-family: 'Berkshire Swash', cursive;
   font-size: 2.5rem;
-  color: #a24123;
-  border-top: 4px solid #508882;
+  color: #df8285;
+  border-top: 5px solid #394e6b;
+}
+.div2, .div3, .div4, .div5{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+iframe{
+  display: flex;
+  align-items: center;
+  width:30vw;
+  height:34vh;
+}
+p{
+  width:40%;
 }
