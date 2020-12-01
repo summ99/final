@@ -29,10 +29,13 @@ body,html{
   border: 5px solid #394e6b;
   border-top: none;
 }
+.logo img{
+  width:100%;
+}
 .logo{
-  background-image: url('logo1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 5px solid #394e6b;
   border-right: 5px solid #394e6b;
 }
@@ -57,25 +60,33 @@ body,html{
   flex-direction: row-reverse;
   flex-wrap: wrap;
 }
-.thumbnailR{
+.thumbnail{
+  width:20vw;
+  height:30vh;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.thumbnail:hover{
+  border-radius:0;
+}
+#thumbnailR{
   display: flex;
   flex-basis: 35%;
   justify-content: center;
   align-items: center;
-  width:20vw;
-  height:30vh;
-  opacity:0.8;
 }
-.thumbnailL{
+#thumbnailL{
   flex-basis: 35%;
   justify-content: flex-start;
-  width:20vw;
-  height:30vh;
-  opacity:0.8;
+}
+.playL:hover, .playR:hover{
+  opacity:0.6;
+  transform: scale(2);
 }
 
 .playL{
-  width:6vw;
+  width:60px;
+  height:60px;
   position: relative;
   margin-top:-8rem;
   margin-left:5rem;
@@ -83,8 +94,8 @@ body,html{
   transition: 0.5s;
 }
 .playR{
-  width:6vw;
-  height:12vh;
+  width:60px;
+  height:60px;
   position: relative;
   margin-bottom:-8rem;
   margin-right:-5rem;
