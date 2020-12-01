@@ -1,3 +1,5 @@
+var arrow = document.getElementById("next");
+var left = document.getElementById("before");
 var modal1 = document.getElementById("yukaModal");
 var modal2 = document.getElementById("bokiModal");
 var modal3 = document.getElementById("stephModal");
@@ -45,4 +47,11 @@ window.onclick = function(event) {
     modal4.style.display = "none";
     window.location = "index.html";
   }
+}
+
+arrow.onclick = function(){
+  window.location = "back.html";
+}
+left.onclick = function(){
+  window.location = "index.html";
 }
