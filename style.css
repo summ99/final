@@ -3,6 +3,7 @@ body,html{
   margin: 5vw 5vw 5vw 5vw;
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
+  color:
 }
 .next{
   width:15vw;
@@ -16,6 +17,7 @@ body,html{
   height:250vh;
   background-color: #f3e2e8;
 }
+/* NOTE: CSS for splitting up menu portions */
 .menubox{
   margin:5vw;
 }
@@ -62,9 +64,11 @@ body,html{
   justify-content: flex-end;
   align-items: center;
 }
+/* NOTE: CSS for images */
 .thumbnail{
+  padding:1vw;
   width:20vw;
-  height:30vh;
+  height:33vh;
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -81,8 +85,9 @@ body,html{
   flex-basis: 35%;
   justify-content: flex-start;
 }
+/* NOTE: CSS for play buttons */
 .playL:hover, .playR:hover{
-  opacity:0.6;
+  opacity:0.8;
   transform: scale(2);
 }
 .playL{
@@ -101,7 +106,7 @@ body,html{
   cursor:pointer;
   transition: 0.5s;
 }
-
+/* NOTE: CSS for image descriptions */
 .descripR{
   display: flex;
   flex-direction: column;
@@ -116,4 +121,27 @@ body,html{
   flex-basis: 60%;
   justify-content: center;
   width: 40vw;
+}
+/* NOTE: CSS for modals*/
+#yuka, #boki, #steph, #sio{
+  position: absolute;
+  top:50%;
+  left:25%;
+  height:auto;
+  border:none;
+  overflow:hidden;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal iframe{
+  margin-top:12%;
+  margin-left: 20%;
+  height:60%;
+  width:60%;
 }
