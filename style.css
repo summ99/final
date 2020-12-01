@@ -57,8 +57,10 @@ body,html{
 }
 .div3, .div5{
   display:flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 .thumbnail{
   width:20vw;
@@ -72,8 +74,8 @@ body,html{
 #thumbnailR{
   display: flex;
   flex-basis: 35%;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 #thumbnailL{
   flex-basis: 35%;
@@ -87,7 +89,6 @@ body,html{
   width:60px;
   height:60px;
   position: absolute;
-  margin-top:1%;
   margin-left:7.5%;
   cursor:pointer;
   transition: 0.5s;
@@ -96,21 +97,23 @@ body,html{
   width:60px;
   height:60px;
   position: absolute;
-  margin-top:9%;
   margin-left:-7.5%;
   cursor:pointer;
   transition: 0.5s;
 }
 
 .descripR{
+  display: flex;
+  flex-direction: column;
   flex-basis: 60%;
-  justify-content: space-between;
+  justify-content: center;
   /*position:relative;
   margin-left: 25vw;
   width: 40vw;*/
 }
 .descripL{
-  position:relative;
-  margin-right: 25vw;
+  display: flex;
+  flex-basis: 60%;
+  justify-content: center;
   width: 40vw;
 }
