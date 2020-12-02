@@ -1,20 +1,19 @@
-var arrow = document.getElementById("next");
-var left = document.getElementById("before");
-var modal1 = document.getElementById("yukaModal");
-var modal2 = document.getElementById("bokiModal");
-var modal3 = document.getElementById("stephModal");
-var modal4 = document.getElementById("sioModal");
-var btn1 = document.getElementById("play1");
-var btn2 = document.getElementById("play2");
-var btn3 = document.getElementById("play3");
-var btn4 = document.getElementById("play4");
-// Get the button that opens the modal
-var btn = document.getElementById("playL");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+  var modal1 = document.getElementById("yukaModal");
+  var modal2 = document.getElementById("bokiModal");
+  var modal3 = document.getElementById("stephModal");
+  var modal4 = document.getElementById("sioModal");
+  var btn1 = document.getElementById("play1");
+  var btn2 = document.getElementById("play2");
+  var btn3 = document.getElementById("play3");
+  var btn4 = document.getElementById("play4");
+  // Get the button that opens the modal
+  // Get the <span> element that closes the modal
+
+  // When the user clicks on the button, open the modal
+
+
 
 btn1.onclick = function() {
   modal1.style.display = "block";
@@ -49,9 +48,7 @@ window.onclick = function(event) {
   }
 }
 
-arrow.onclick = function(){
-  window.location = "back.html";
-}
-left.onclick = function(){
-  window.location = "index.html";
-}
+  var arrow = document.getElementById("next");
+  arrow.onclick = function(){
+    location.replace("back.html");
+  }
