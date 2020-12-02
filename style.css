@@ -162,3 +162,11 @@ h4{
   height:60%;
   width:60%;
 }
+.comment1s, .comment2s {
+  background-color: #f8f8f8;
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  width: 20vw;
+  padding: 0.5vw;
+  margin-top: 2vw;
+}
