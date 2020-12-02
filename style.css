@@ -55,6 +55,10 @@ body,html{
   color: #a45269;
   border-top: 5px solid #394e6b;
 }
+h4{
+  font-family: 'Berkshire Swash', cursive;
+  color: #a45269;
+}
 #div2, #div4, #div6, #div8{
   display:flex;
   flex-direction: column;
