@@ -62,44 +62,29 @@ window.onclick = function(event) {
       newContentElement.classList.add('bubble');
 
       //create imgs of the gift ideas
-      let newContentPic = document.createElement("IMG");
-      newContentPic.classList.add("giftImg");
-      newContentPic.src = incomingJSON[i]['picture'];
-      bubble.appendChild(newContentPic);
+      let newComment1 = document.createElement("DIV");
+      newComment1.classList.add("comment1s");
+      newComment1.innerText = incomingJSON[i]["comment1"];
+      newContentElement.appendChild(newComment1);
 
-      //create h4 with item name
-      let newContentName = document.createElement("H4");
-      newContentName.classList.add('contentName');
-      newContentName.innerText = incomingJSON[i]['item'];
-      newContentElement.appendChild(newContentName);
+      let newComment2 = document.createElement("DIV");
+      newComment2.classList.add("comment2s");
+      newComment2.innerText = incomingJSON[i]["comment2"];
+      newContentElement.appendChild(newComment2);
 
-
-      let newContentPrice = document.createElement("P");
-      newContentPrice.classList.add('contentPrice');
-      newContentPrice.innerText =  incomingJSON[i]['giftPrice'];
-      newContentElement.appendChild(newContentPrice);
-
-      let newLinkButton = document.createElement("BUTTON");
-      newLinkButton.classList.add('linkButtons');
-      newLinkButton.innerText = "Shop Now";
-      newLinkButton.addEventListener("click", function(){ window.location = incomingJSON[i]['link'];});
-      newContentElement.appendChild(newLinkButton);
-
-      if (incomingJSON[i]['category'] == 'kitchen'){
-        kitchenGridElement.appendChild(newContentElement);
+      if (incomingJSON[i]['section'] == 'boki'){
+        bokiSection.appendChild(newContentElement);
       }
-      else if(incomingJSON[i]['category'] == 'home'){
-        homeGridElement.appendChild(newContentElement);
+      else if(incomingJSON[i]['section'] == 'yuka'){
+        yukaSection.appendChild(newContentElement);
       }
-      else if(incomingJSON[i]['category'] == 'personal'){
-        personalGridElement.appendChild(newContentElement);
+      else if(incomingJSON[i]['section'] == 'steph'){
+        stephSection.appendChild(newContentElement);
       }
       else if
-      (incomingJSON[i]['category'] == 'fun'){
-        funGridElement.appendChild(newContentElement);
+      (incomingJSON[i]['section'] == 'sio'){
+        sioSection.appendChild(newContentElement);
       }
-      else {gadgetGridElement.appendChild(newContentElement)}
-    //  kitchenGridElement.appendChild(newContentElement);
     }
 
   }
