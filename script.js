@@ -55,13 +55,11 @@ window.onclick = function(event) {
     location.replace("back.html");
   }
 
-  function createElement(incomingJSON){
-    for (let i = 0; i < incomingJSON.length; i++) {
-
+function createElement(incomingJSON){
+  for (let i = 0; i < incomingJSON.length; i++) {
       let newContentElement = document.createElement("DIV");
       newContentElement.classList.add('bubble');
-
-      //create imgs of the gift ideas
+      //create divs of the two comment bubbles
       let newComment1 = document.createElement("DIV");
       newComment1.classList.add("comment1s");
       newComment1.innerText = incomingJSON[i]["comment1"];
@@ -88,4 +86,4 @@ window.onclick = function(event) {
     }
 
   }
-  createElement(jsonData);
+createElement(jsonData);
