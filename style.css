@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato&display=swap');
 body,html{
+  background-color: #ffffff;
   margin: 5vw 5vw 5vw 5vw;
   padding:5vw;
-  background-color: #ffffff;
+}
+.abt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  padding: 2vw;
 }
 .arrow > img{
   width:15vw;

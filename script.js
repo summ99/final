@@ -65,10 +65,15 @@ window.onclick = function(event) {
   }
 }
 
-  var arrow = document.getElementById("next");
-  arrow.onclick = function(){
-    location.replace("back.html");
-  }
+var arrow = document.getElementById("next");
+arrow.onclick = function(){
+  location.replace("back.html");
+}
+
+var more = document.getElementById("abt");
+more.onclick = function(){
+  location.replace("about.html");
+}
 
 function createElement(incomingJSON){
   for (let i = 0; i < incomingJSON.length; i++) {

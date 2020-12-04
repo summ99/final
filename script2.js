@@ -3,6 +3,12 @@ left.onclick = function(){
   location.replace("index.html");
 }
 
+var more = document.getElementById("abt");
+more.onclick = function(){
+  location.replace("about.html");
+}
+
+
 var modal6 = document.getElementById("inahModal");
 var modal7 = document.getElementById("katherineModal");
 var modal8 = document.getElementById("veronicaModal");
