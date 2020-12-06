@@ -80,7 +80,8 @@ body,html{
   align-items: center;
   font-family: 'Berkshire Swash', cursive;
   font-size: 2.5rem;
-  color: #a45269;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
   border-top: 5px solid #394e6b;
 }
 h4{
