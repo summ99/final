@@ -209,10 +209,43 @@ h4{
   padding: 0.2vw;
   margin-top: 1.2vw;
 }
-.grid{
-  display:grid;
-  grid-template-columns: auto auto auto;
+.what{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+.Acontainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  padding:5vw;
+  background-color: #f3e2e8;
+  color: #a66e7c;
+  font-family: 'Lato', sans-serif;
+}
+descrip > div {
+  width:55vw;
+  height:40vh;
+  border: 5px solid #394e6b;
+  border-top: none;
+}
+#korean{
+  font-size: 5rem;
+  color: #fff;
   text-align: center;
-  margin-top: 5vmin;
-  width: 30vw;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #e60073, 0 0 20px #e60073, 0 0 40px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 10px #ff4da6, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 50px #ff4da6;
+  }
+}
+span{
+  font-size:2rem;
 }
