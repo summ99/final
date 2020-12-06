@@ -4,12 +4,11 @@ body,html{
   margin: 5vw 5vw 5vw 5vw;
   padding:5vw;
 }
-.abt{
+.watch1{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-self: flex-end;
-  padding: 2vw;
+  padding: 1vw;
 }
 @-webkit-keyframes hvr-pulse-grow {
   to {
@@ -23,13 +22,13 @@ body,html{
     transform: scale(1.15);
   }
 }
-#abtImg{
+.watch1, .watch{
   opacity:0.75;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-#abtImg:hover{
+.watch1:hover, .watch:hover{
   opacity:1;
   cursor: pointer;
   -webkit-animation-name: hvr-pulse-grow;
@@ -43,9 +42,7 @@ body,html{
  -webkit-animation-direction: alternate;
  animation-direction: alternate;
 }
-.arrow > img{
-  width:15vw;
-}
+
 .container{
   display:flex;
   flex-direction: column;
@@ -287,4 +284,14 @@ ul li::before {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.watch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#go{
+  text-decoration: none;
+  color: #a66e7c;
+  text-align: center;
 }

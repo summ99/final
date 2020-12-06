@@ -1,14 +1,3 @@
-var left = document.getElementById("before");
-left.onclick = function(){
-  window.location = "index.html";
-}
-
-var more = document.getElementById("abtImg");
-more.onclick = function(){
-  window.location = "about.html";
-}
-
-
 var modal6 = document.getElementById("inahModal");
 var modal7 = document.getElementById("katherineModal");
 var modal8 = document.getElementById("veronicaModal");

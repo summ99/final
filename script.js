@@ -65,16 +65,6 @@ window.onclick = function(event) {
   }
 }
 
-var arrow = document.getElementById("next");
-arrow.onclick = function(){
-  window.location = "index.html";
-}
-
-var more = document.getElementById("abtImg");
-more.onclick = function(){
-  window.location = "about.html";
-}
-
 function createElement(incomingJSON){
   for (let i = 0; i < incomingJSON.length; i++) {
       let newContentElement = document.createElement("DIV");
