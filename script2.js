@@ -1,11 +1,11 @@
 var left = document.getElementById("before");
 left.onclick = function(){
-  location.replace("index.html");
+  window.location = "index.html";
 }
 
-var more = document.getElementById("abt");
+var more = document.getElementById("abtImg");
 more.onclick = function(){
-  location.replace("about.html");
+  window.location = "about.html";
 }
 
 

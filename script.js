@@ -67,12 +67,12 @@ window.onclick = function(event) {
 
 var arrow = document.getElementById("next");
 arrow.onclick = function(){
-  location.replace("back.html");
+  window.location = "index.html";
 }
 
-var more = document.getElementById("abt");
+var more = document.getElementById("abtImg");
 more.onclick = function(){
-  location.replace("about.html");
+  window.location = "about.html";
 }
 
 function createElement(incomingJSON){
