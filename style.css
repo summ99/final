@@ -228,15 +228,16 @@ h4{
 }
 .descrip > div{
   width:55vw;
-  height:40vh;
+  margin-bottom: 2vw;
   border-bottom: 5px dotted #394e6b;
+  padding:0.5vw;
 }
 #korean{
   display: flex;
   font-size: 5rem;
   color: #fff;
-  justify-content: space-around;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
+  margin-bottom: 2vw;
 }
 @-webkit-keyframes glow{
   from {
@@ -249,4 +250,20 @@ h4{
 span{
   text-align: center;
   font-size:1.35rem;
+  padding:0.5vw;
+}
+.whyPic{
+  width:20vw;
+  height:30vh;
+}
+.why{
+  display: flex;
+  flex-direction: column;
+}
+.why >div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vw;
 }
