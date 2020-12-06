@@ -226,16 +226,16 @@ h4{
   color: #a66e7c;
   font-family: 'Lato', sans-serif;
 }
-descrip > div {
+.descrip > div{
   width:55vw;
   height:40vh;
-  border: 5px solid #394e6b;
-  border-top: none;
+  border-bottom: 5px dotted #394e6b;
 }
 #korean{
+  display: flex;
   font-size: 5rem;
   color: #fff;
-  text-align: center;
+  justify-content: space-around;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
 }
 @-webkit-keyframes glow{
@@ -247,5 +247,6 @@ descrip > div {
   }
 }
 span{
-  font-size:2rem;
+  text-align: center;
+  font-size:1.35rem;
 }
